@@ -1,6 +1,9 @@
 class UrlCompressorController < ApplicationController
   protect_from_forgery with: :null_session
 
+  def index
+
+  end
   def compress_url
     if  params[:url].present? && params[:url].any?
       url_array = []
