@@ -1,0 +1,2 @@
+module UrlCompressorHelper
+end
