@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 2.7+
+RAILS_ENV=production rake db:create
+RAILS_ENV=production rake db:migrate
+RAILS_ENV=production rails s
+For console
+RAILS_ENV=production rails c
+<br>
+<b>For Cache Project must be run in production env.</b>
 
-Things you may want to cover:
 
-* Ruby version
+<b>API</b>
+1- Compress URL
+a - URL: https://url-shortner-tool.herokuapp.com/compress_url
 
-* System dependencies
+b- Method : POST
 
-* Configuration
+c- Body Parameter: It take array of URL
+e.g
+{"url": ["www.twitter.com", "www.facebook.com"]}
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+d- It return array of short urls
